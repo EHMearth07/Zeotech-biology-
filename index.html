@@ -104,17 +104,18 @@
   <div class="overlay"></div>
 
   <!-- Navbar -->
-  <nav>
-    <a href="#intro">Introduction</a>
-    <a href="#foundations">Foundations</a>
-    <a href="#pillars">10 Pillars</a>
-    <a href="#diagnosis">Diagnosis</a>
-    <a href="#mandate">Mandate</a>
-    <a href="#implementation">Implementation</a>
-    <a href="#individuals">Role of Individuals</a>
-    <a href="#youth">Youth</a>
-    <a href="#conclusion">Conclusion</a>
-  </nav>
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#foundations">Foundations</a>
+  <a href="#pillars">10 Pillars</a>
+  <a href="#diagnosis">Diagnosis</a>
+  <a href="#mandate">Mandate</a>
+  <a href="#implementation">Implementation</a>
+  <a href="#individuals">Role of Individuals</a>
+  <a href="#youth">Youth</a>
+  <a href="#conclusion">Conclusion</a>
+  <a href="#contact">Contact</a>  <!-- Add this -->
+</nav>
 
   <!-- Manifesto Sections -->
   <section id="intro">
@@ -316,6 +317,23 @@ This is the work of generations. But it begins with us. Now.
 
 Let this be the moment we turned to face the storm, not with fear, but with fierce love—for the Earth, for each other, and for the billions yet to come.]</em></p>
   </section>
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="hidden" name="_next" value="thank-you.html">  <!-- Redirect after submission -->
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <footer>
     &copy; 2025 Ecological Human Mandate | Email: ehm.earth@gmail.com
