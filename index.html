@@ -3,215 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EHM Mandate - New World Order</title>
+    <title>EHM Mandate - Earth</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a2d21;
-            color: #ffffff;
             margin: 0;
             padding: 0;
+            background-color: #2C6B2F;
+            color: #FFFFFF;
+            scroll-behavior: smooth;
         }
         header {
-            background-color: #2e5d46;
-            padding: 20px;
+            background-color: #1E4A25;
+            padding: 20px 0;
             text-align: center;
-            color: #fff;
-            font-size: 2rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            animation: fadeIn 3s ease-in;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #254730;
+            background-color: #254D28;
             padding: 10px;
+            text-align: center;
         }
         nav a {
-            color: #fff;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-size: 18px;
             text-transform: uppercase;
-            transition: 0.3s;
+            letter-spacing: 1px;
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #4CAF50;
+            color: #90EE90;
         }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            color: #4CAF50;
-        }
-        .content ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        footer {
-            background-color: #2e5d46;
-            padding: 10px;
+        section {
+            padding: 60px 20px;
             text-align: center;
-            color: #fff;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: #fff;
-            text-decoration: none;
-            margin-top: 20px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: #3e8e41;
-        }
-        .intro {
-            background-color: #2e5d46;
-            padding: 30px;
-            margin-top: 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .intro p {
-            font-size: 1.5rem;
-            line-height: 1.6;
-        }
-        .rule {
-            background-color: #354e3b;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-        .rule:hover {
-            background-color: #4CAF50;
-            cursor: pointer;
-            color: #fff;
-        }
-        .main-title {
-            color: #4CAF50;
-            font-size: 2.5rem;
-            text-align: center;
-        }
-        .content-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .content-section img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-        .contact-form {
-            background-color: #354e3b;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.5s ease-out;
         }
         .contact-form input, .contact-form textarea {
-            width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
-            border: none;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #FFFFFF;
             border-radius: 5px;
-            background-color: #2e5d46;
-            color: #fff;
-            font-size: 1rem;
+            background-color: #2C6B2F;
+            color: #FFFFFF;
+            font-size: 16px;
         }
         .contact-form button {
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #90EE90;
             border: none;
-            color: #fff;
-            font-size: 1.1rem;
             border-radius: 5px;
             cursor: pointer;
-            transition: 0.3s;
+            font-size: 18px;
         }
         .contact-form button:hover {
-            background-color: #3e8e41;
+            background-color: #78B73A;
+        }
+        footer {
+            background-color: #1E4A25;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Chatbot Styles */
+        .chatbot-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #254D28;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .chatbot-header {
+            background-color: #2C6B2F;
+            padding: 10px;
+            color: #FFFFFF;
+            font-size: 18px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .chatbot-messages {
+            padding: 10px;
+            overflow-y: auto;
+            height: 250px;
+            background-color: #2C6B2F;
+        }
+        .chatbot-input {
+            padding: 10px;
+            margin-top: 10px;
+            width: calc(100% - 20px);
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .chatbot-button {
+            padding: 10px;
+            background-color: #90EE90;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            color: #254D28;
+        }
+        .chatbot-button:hover {
+            background-color: #78B73A;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>EHM Mandate - New World Order</h1>
+        <h1>EHM Mandate - Earth</h1>
     </header>
 
     <nav>
-        <a href="#intro">Home</a>
-        <a href="#rules">The Rules</a>
-        <a href="#vision">Our Vision</a>
-        <a href="#manifesto">Manifesto</a>
+        <a href="#vision">Vision</a>
+        <a href="#rules">Rules</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="content">
-        <section id="intro" class="section">
-            <div class="intro">
-                <h2 class="main-title">Welcome to the Earth Human Mandate (EHM)</h2>
-                <p>The EHM is a vision for humanity, rooted in ecological stability and scientific progress. We believe that humans should live in harmony with the Earth, respecting the ecology, and striving for personal growth without disrupting our collective existence. The time to evolve is now. Let's unite, focus, and rise together under a common mandate.</p>
-            </div>
-        </section>
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>We aim to build a sustainable, peaceful, and technologically advanced society where humanity and nature thrive together. Through education and empowerment, we will rebuild the world to ensure ecological stability and social harmony.</p>
+    </section>
 
-        <section id="rules" class="section">
-            <h2 class="main-title">The 10 Core Rules of EHM</h2>
-            <div class="rule">1. **Ecological Stability First**: Every action, every choice, must be in harmony with nature’s laws. We don’t compromise the Earth for progress.</div>
-            <div class="rule">2. **Universal Education**: Knowledge is power. Every citizen will have access to education, focusing on ecology, technology, and scientific advancement.</div>
-            <div class="rule">3. **Non-Violence**: Physical violence is never a solution. We will seek to solve conflicts through dialogue and mutual understanding.</div>
-            <div class="rule">4. **Personal Freedom**: You are free to believe what you choose, as long as it does not disrupt the balance of society or ecology.</div>
-            <div class="rule">5. **Greed is the Enemy**: Greed leads to destruction. No individual should have more than they need to live a comfortable life.</div>
-            <div class="rule">6. **Social Responsibility**: Every individual will contribute to the community’s well-being. No one is above the collective need.</div>
-            <div class="rule">7. **Human Unity**: We must rise above religious, racial, and cultural divisions. Unity in diversity will be our strength.</div>
-            <div class="rule">8. **Scientific Advancement**: Technology and science will be the backbone of progress, but always in the service of humanity, not for destruction.</div>
-            <div class="rule">9. **Sustainability**: We will live in a way that doesn’t deplete the planet’s resources. Our future depends on it.</div>
-            <div class="rule">10. **Peaceful Leadership**: Leaders will guide through wisdom, compassion, and ecological stewardship, not through power and control.</div>
-        </section>
+    <section id="rules">
+        <h2>Our 10 Rules</h2>
+        <ul>
+            <li>1. Science and ecology will be our guiding light.</li>
+            <li>2. Religion is personal; practice it peacefully without causing harm.</li>
+            <li>3. Greed is destructive and will not be tolerated.</li>
+            <li>4. People will be valued based on their contribution to society, not their social status.</li>
+            <li>5. All citizens must have access to education, healthcare, and opportunities.</li>
+            <li>6. Nature will be preserved for future generations.</li>
+            <li>7. Freedom of speech and thought will be protected, as long as it does not harm others.</li>
+            <li>8. Equality and fairness will be the foundation of our legal system.</li>
+            <li>9. Technology will be used to advance humanity, not to control it.</li>
+            <li>10. We will act with kindness, empathy, and respect for all life.</li>
+        </ul>
+    </section>
 
-        <section id="vision" class="section">
-            <h2 class="main-title">Our Vision for the Future</h2>
-            <div class="content-section">
-                <p>We envision a world where humanity transcends its divisions and strives for collective well-being. This new world will prioritize ecological health, scientific growth, and personal freedoms without exploitation. We will use technology and knowledge to advance humanity, but not at the cost of our environment or each other. The Earth is our home, and we will protect it, nourish it, and grow alongside it.</p>
-                <img src="https://via.placeholder.com/800x400?text=Our+Future+Vision" alt="Future Vision of Earth">
-            </div>
-        </section>
-
-        <section id="manifesto" class="section">
-            <h2 class="main-title">The EHM Manifesto</h2>
-            <p>The manifesto is a call to action for all who believe in a brighter, more sustainable future. It outlines the steps we will take to build this world — step by step, united, and focused on the Earth’s well-being. The Mandate of Earth will be the blueprint for humanity’s survival and prosperity. This will be our guide.</p>
-            <a href="#" class="button">Read the Manifesto</a>
-        </section>
-
-        <section id="contact" class="section">
-            <h2 class="main-title">Contact Us</h2>
-            <div class="contact-form">
-                <h3>Get in Touch</h3>
-                <p>If you have any questions, ideas, or just want to reach out to us, feel free to use the form below. We value your thoughts and contributions.</p>
-                <form action="mailto:ehm.earth@gmail.com" method="POST" enctype="text/plain">
-                    <label for="name">Your Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-
-                    <label for="email">Your Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="message">Your Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </div>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Earth Human Mandate. All Rights Reserved.</p>
+        <p>© 2025 EHM Mandate - Earth. All Rights Reserved.</p>
     </footer>
+
+    <!-- Chatbot Pop-up -->
+    <div class="chatbot-popup" id="chatbot">
+        <div class="chatbot-header">
+            EHM Assistant
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <p><strong>EHM Assistant:</strong> Hello, how can I help you today?</p>
+        </div>
+        <input type="text" class="chatbot-input" id="userInput" placeholder="Type your message..." />
+        <button class="chatbot-button" id="sendMessage">Send</button>
+    </div>
+
+    <!-- Chatbot Trigger Button -->
+    <button style="position: fixed; bottom: 20px; right: 20px; background-color: #90EE90; padding: 10px; border-radius: 5px; font-size: 18px; cursor: pointer;" onclick="toggleChatbot()">Chat with Assistant</button>
+
+    <script>
+        // Toggle Chatbot visibility
+        function toggleChatbot() {
+            const chatbot = document.getElementById('chatbot');
+            chatbot.style.display = (chatbot.style.display === 'flex') ? 'none' : 'flex';
+        }
+
+        // Handle sending messages
+        document.getElementById('sendMessage').addEventListener('click', function() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput) {
+                // Add user message to chatbot
+                const userMessage = document.createElement('p');
+                userMessage.innerHTML = '<strong>You:</strong> ' + userInput;
+                document.getElementById('chatbotMessages').appendChild(userMessage);
+                
+                // AI response logic (basic)
+                const botMessage = document.createElement('p');
+                botMessage.innerHTML = '<strong>EHM Assistant:</strong> Thank you for your message. We will get back to you soon.';
+                document.getElementById('chatbotMessages').appendChild(botMessage);
+
+                // Clear input field
+                document.getElementById('userInput').value = '';
+                document.getElementById('chatbotMessages').scrollTop = document.getElementById('chatbotMessages').scrollHeight;
+            }
+        });
+    </script>
 </body>
 </html>
