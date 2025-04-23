@@ -446,37 +446,38 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
 
 .</p>
 
-    <section id="social" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white px-6 py-16">
-  <div class="text-center space-y-6 animate-fade-in">
-    <h2 class="text-4xl font-extrabold tracking-wide text-pink-500">Connect With Us</h2>
+    <section id="social" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white px-6 py-20">
+  <div class="text-center space-y-8 animate-fade-in max-w-3xl">
+    <h2 class="text-5xl font-bold tracking-tight text-pink-400">Stay Connected</h2>
     
-    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-      Join Zeotech's journey in innovating bioengineering and microbiological research. Stay tuned for daily insights, research updates, and behind-the-scenes!
+    <p class="text-xl text-gray-300">
+      Join our journey as we reshape microbiology, bioenergy, and viral biotechnology.  
+      Daily insights. Raw science. Real impact.
     </p>
 
     <a href="https://www.instagram.com/zeotech_microbio?igsh=dnh5aWM2anl1bXhl" 
        target="_blank"
-       class="inline-flex items-center gap-3 bg-pink-600 hover:bg-pink-700 transition px-6 py-3 text-lg font-medium text-white rounded-full shadow-lg">
+       class="inline-flex items-center gap-3 bg-pink-500 hover:bg-pink-600 transition-all duration-300 px-7 py-3 text-lg font-semibold text-white rounded-full shadow-md shadow-pink-800/20 hover:shadow-xl hover:scale-105">
       
-      <!-- Instagram Icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+      <!-- Custom Instagram Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 3a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
       </svg>
 
-      <span>@zeotech_microbio</span>
+      <span class="tracking-wide">@zeotech_microbio</span>
     </a>
   </div>
 </section>
 
   
 
-  <section id="contact">
+<section id="contact">
 
   <h2>5. Contact Us</h2>
 
   <p>Have a question or want to collaborate? Reach out to us below.</p>
 
-  <form action="https://formsubmit.co/ehm.earth@email.com" method="POST" /> style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST"> style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
 
     <input type="text" name="name" placeholder="Your Name" required 
 
@@ -517,6 +518,37 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
   
 
   </section>
+
+    <script>
+
+  let slideIndex = 0;
+
+  const slides = document.querySelectorAll('.slideshow img');
+
+
+
+  function showSlides() {
+
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    slides[slideIndex].classList.add('active');
+
+    slideIndex = (slideIndex + 1) % slides.length;
+
+  }
+
+
+
+  slides[0].classList.add('active'); // Show the first slide immediately
+
+  setInterval(showSlides, 5000); // Switch every 8 seconds
+
+</script>
+
+
+
+</body>
+
 
     <script>
 
