@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ecological Human Mandate</title>
+  <title>Zeotech Institute of Bioengineering</title>
   <style>
     body, html {
       margin: 0;
@@ -46,6 +46,7 @@
       z-index: -1;
     }
 
+    /* Navigation Bar */
     nav {
       background-color: rgba(0, 0, 0, 0.7);
       position: fixed;
@@ -53,35 +54,61 @@
       z-index: 10;
       top: 0;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     nav a {
       color: #fff;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
+    /* Main Sections */
     section {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 120px auto;
-      padding: 30px;
+      padding: 40px;
       background: rgba(0,0,0,0.7);
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 
     section h2 {
       color: #00ffcc;
       margin-top: 0;
+      font-size: 2em;
     }
 
     section p {
-      line-height: 1.6;
+      line-height: 1.8;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    section ul li {
+      margin: 15px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #00ffcc;
+      font-size: 1.5em;
     }
 
     footer {
@@ -89,7 +116,96 @@
       padding: 40px;
       background: #111;
       color: #aaa;
+      font-size: 0.9em;
     }
+
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Form */
+    form label {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    form button {
+      padding: 12px 25px;
+      background-color: #00ffcc;
+      border: none;
+      border-radius: 5px;
+      color: #111;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #008c66;
+    }
+
+    /* Section for visual balance */
+    .content-section {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .content-section div {
+      flex: 1 1 30%;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-section div h3 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .content-section div p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    /* Scroll to top button */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ffcc;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #008c66;
+    }
+
   </style>
 </head>
 <body>
@@ -104,240 +220,76 @@
   <div class="overlay"></div>
 
   <!-- Navbar -->
-<nav>
-  <a href="#intro">Introduction</a>
-  <a href="#foundations">Foundations</a>
-  <a href="#pillars">10 Pillars</a>
-  <a href="#diagnosis">Diagnosis</a>
-  <a href="#mandate">Mandate</a>
-  <a href="#implementation">Implementation</a>
-  <a href="#individuals">Role of Individuals</a>
-  <a href="#youth">Youth</a>
-  <a href="#conclusion">Conclusion</a>
-  <a href="#contact">Contact</a>  <!-- Add this -->
-</nav>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#collaborations">Collaborations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- Manifesto Sections -->
-  <section id="intro">
-    <h2>1. Introduction: The Need for a New Mandate</h2>
-    <p>We are standing at a critical threshold in the history of civilization For centuries, humanity has walked a path of progress powered by science, industry, and ambition. Yet in the pursuit of mastery over nature, we have grown blind to the delicate web that sustains us. Climate collapse, ecological destruction, rising inequality, loss of meaning—these are not isolated crises. They are the symptoms of a worldview that has grown unsustainable.
-
-The Ecological Human Mandate (EHM) is a philosophical, moral, and civilizational call to action. It is a declaration that the current trajectory of human civilization—dominated by short-term gains, exploitative systems, and alienation from nature—must be decisively abandoned.
-
-It is not merely an environmental plea. It is a total reimagining of humanity’s place in the cosmos, our responsibility to each other, and our stewardship of the Earth.  <em>[continue full text here]</em></p>
+  <!-- Main Content -->
+  <section id="overview">
+    <h2>Overview of Zeotech Bioengineering</h2>
+    <p>Zeotech Institute of Bioengineering is at the forefront of groundbreaking research in bioengineering. We are dedicated to integrating biological principles with advanced technologies to address humanity’s most pressing health challenges. Our vision is to bridge the gap between biology and technology to create sustainable solutions for the future.</p>
   </section>
 
-  <section id="foundations">
-    <h2>2. Philosophical Foundations</h2>
-    <p>At its core, the EHM arises from a deep ecological and humanistic worldview... <em>[At its core, the EHM arises from a deep ecological and humanistic worldview. It is grounded in five fundamental truths:
-
-Interdependence: Nothing exists in isolation. All beings, ecosystems, and societies are entangled in complex feedback loops. No decision is local. No action is free of consequence.
-
-Intrinsic Value: Life has value not because of its utility to humans, but because of its mere existence. Forests, oceans, microbes, and even the smallest beetles possess a right to be.
-
-Scientific Integrity: Knowledge must not serve profit, propaganda, or control. It must serve truth, life, and justice.
-
-Spiritual Ecology: Humans are not rulers of Earth but participants in a sacred web. Every river, mountain, and species is a reflection of something deeper—something eternal.
-
-Temporal Humility: We are the inheritors of a billion-year legacy. Our decisions today must consider the lives of those born thousands of years hence.
-
-
-This is not a utopian fantasy. It is the only viable path forward.
-</p>
+  <section id="research">
+    <h2>Research Focus</h2>
+    <div class="content-section">
+      <div>
+        <h3>Genetic Engineering</h3>
+        <p>We focus on the application of genetic modification to enhance human health, agriculture, and environmental sustainability.</p>
+      </div>
+      <div>
+        <h3>Bioinformatics</h3>
+        <p>Utilizing data analysis and algorithms to unlock the potential of bioengineering and create new opportunities for healthcare.</p>
+      </div>
+      <div>
+        <h3>Nanobiotechnology</h3>
+        <p>We explore the potential of nanotechnology for developing drug delivery systems and advanced medical treatments.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="pillars">
-    <h2>3. The 10 Pillars of EHM</h2>
-    <p>1. Ecological Sustainability All human activity must align with the carrying capacity of Earth. Overconsumption, waste, and extractivism must be replaced with circular, regenerative systems.
-
-
-2. Scientific Integrity
-Science must be protected from corporate capture and misinformation. It should guide policy, education, and culture without bias.
-
-
-3. Global Unity
-Nationalism must evolve into planetary citizenship. The fate of any one country is the fate of all.
-
-
-4. Equality and Justice
-True sustainability is impossible without dismantling structural inequalities—whether based on class, race, gender, or geography.
-
-
-5. Accountability and Transparency
-Every institution, from governments to corporations, must be accountable to the public and the planet.
-
-
-6. Technology in Service of Life
-Innovation must be evaluated not by profitability, but by its impact on ecosystems, mental health, and social cohesion.
-
-
-7. Nonviolence and Peace
-The ecological crisis is inseparable from conflict. Militarism, exploitation, and greed are obstacles to peace and sustainability.
-
-
-8. Community over Hyper-individualism
-Isolation breeds despair. A new culture must arise that centers interdependence, cooperation, and shared meaning.
-
-
-9. Education as Empowerment
-Education must not just create workers. It must cultivate citizens, thinkers, and stewards of Earth.
-
-
-10. Harmony with Nature
-Every policy, system, and lifestyle must be evaluated by its resonance with the natural world.
-.</p>
+  <section id="projects">
+    <h2>Ongoing Projects</h2>
+    <p>We are actively working on several interdisciplinary projects aimed at transforming the healthcare landscape. These projects include:</p>
+    <ul>
+      <li>Development of bioengineered tissues for organ regeneration.</li>
+      <li>Innovations in targeted gene therapy for chronic diseases.</li>
+      <li>Environmental restoration through biotechnology.</li>
+    </ul>
   </section>
 
-  <section id="diagnosis">
-    <h2>4. The Diagnosis: Where We Are Now</h2>
-    <p>Let us not be deceived by comfort. The crises unfolding today... <em>[mass extinctions, resource wars, psychological alienation—are signals of systemic failure. Our current civilization is predicated on the illusion of infinite growth on a finite planet. It is the architecture of collapse.
-
-We live in a time of:
-
-Biological Collapse: Over 70% of vertebrate populations have been lost in just 50 years.
-
-Climate Emergency: We are breaching planetary boundaries faster than the Earth can stabilize.
-
-Mass Disconnection: Depression, loneliness, and despair plague modern societies.
-
-Spiritual Starvation: Material abundance has not filled the void of purpose.
-
-
-The systems we inherited—economic, political, educational—are maladapted for the ecological era.
-</p>
+  <section id="collaborations">
+    <h2>Strategic Collaborations</h2>
+    <p>Zeotech works closely with leading universities, research institutes, and industry leaders to push the boundaries of bioengineering. These collaborations help us translate research into real-world solutions.</p>
   </section>
 
-  <section id="mandate">
-    <h2>5. The Mandate: What We Must Do</h2>
-    <p>The EHM calls for a complete reorientation... <em>[Not incremental reforms, but civilizational transformation. Here are the broad categories of change:
-
-Ecological Restoration
-
-Rewilding urban spaces and protecting biodiversity hotspots.
-
-Ending fossil fuel subsidies and transitioning to clean, decentralized energy.
-
-Supporting indigenous land sovereignty and agroecological farming.
-
-
-Economic Degrowth and Regenerative Economies
-
-Moving beyond GDP as a measure of success.
-
-Implementing circular economies, localized supply chains, and community wealth-building.
-
-Universal basic services to ensure no one is left behind.
-
-
-Decolonized Governance
-
-Empowering local communities while fostering planetary cooperation.
-
-Reforming institutions like the UN to reflect ecological priorities.
-
-Adopting legal rights for nature and future generations.
-
-
-Education for Earth
-
-Making ecological literacy a core requirement in every school.
-
-Teaching systems thinking, climate science, and philosophical ethics from an early age.
-
-Promoting citizen science and community-based research.
-
-
-Healing and Meaning
-
-Reintegrating rituals, arts, and philosophy into public life.
-
-Creating spaces for reflection, grief, and celebration.
-
-Encouraging spiritual practices that connect humans to the web of life.</p>
-  </section>
-
-  <section id="implementation">
-    <h2>6. Implementation</h2>
-    <p>EHM is not a top-down doctrine... <em>[It is a decentralized framework that can be adapted across cultures and nations. The implementation model focuses on:
-
-Local Mandates: Communities can declare their own EHM charters and build alliances across cities and villages.
-
-Student Movements: Young people can use EHM as a framework for environmental and social action in schools and universities.
-
-Policy Blueprints: EHM-aligned policy proposals can be introduced at municipal and national levels—covering everything from zoning to transportation to public health.
-
-Open-source Networks: Digital platforms can facilitate knowledge exchange and support between EHM communities.
-
-</p>
-  </section>
-
-  <section id="individuals">
-    <h2>7. The Role of Individuals</h2>
-    <p>Though the mandate speaks globally, its roots are personal... <em>[To live the EHM means to:
-
-Question the assumptions you've inherited.
-
-Align your daily choices—food, energy, relationships—with the principles of life.
-
-Become a voice of courage in your community.
-
-Forgive yourself and others as we unlearn centuries of harmful patterns.
-
-
-This is not about perfection. It is about intentionality. Every step counts.</p>
-  </section>
-
-  <section>
-    <h2>8. Opposition and Obstacles</h2>
-    <p>We must not be naive. The forces resisting change are powerful... <em>[fossil fuel lobbies, corporate monopolies, authoritarian regimes, and the inertia of comfort. Psychological denial and cultural numbness are just as formidable.
-
-But these systems are brittle. Their legitimacy depends on our belief in them.
-
-When we withdraw our consent and redirect our energy, the collapse of the old becomes the birth of the new.</p>
-  </section>
-
-  <section id="youth">
-    <h2>9. A Call to the Youth</h2>
-    <p>You—who were born into crisis—are not its victims. You are its response... <em>[You are the living edge of evolution, the bridge between eras.
-
-Reject cynicism. Refuse apathy. Reclaim your power.
-
-Plant a seed. Join a local project. Start a reading circle. Design new systems. Build community. Heal.
-
-The future is not a place we go. It is a choice we make.</p>
-  </section>
-
-  <section id="conclusion">
-    <h2>10. Conclusion: Toward a New Dawn</h2>
-    <p>The Ecological Human Mandate is not just a document. It is a declaration of life.The Ecological Human Mandate is not just a document. It is a declaration of life. It is a song for the future. A fire passed hand to hand through the darkness.
-
-We do not have all the answers. But we have the courage to ask better questions.
-
-This is the work of generations. But it begins with us. Now.
-
-Let this be the moment we turned to face the storm, not with fear, but with fierce love—for the Earth, for each other, and for the billions yet to come.]</em></p>
-  </section>
   <section id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/zeotech@bioengineering.com" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
 
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-    <input type="hidden" name="_next" value="thank-you.html">  <!-- Redirect after submission -->
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <input type="hidden" name="_next" value="thank-you.html">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <footer>
-    &copy; 2025 Ecological Human Mandate | Email: ehm.earth@gmail.com
+    &copy; 2025 Zeotech Institute of Bioengineering | <a href="mailto:zeotech@bioengineering.com">Contact Us</a>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
 
   <!-- Slideshow Script -->
   <script>
