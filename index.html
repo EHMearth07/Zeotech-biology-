@@ -476,7 +476,7 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
 
   <p>Have a question or want to collaborate? Reach out to us below.</p>
 
-  <form action="https://formsubmit.co/shm.earth@email.com" method="POST" /> style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+  <form action="https://formsubmit.co/ehm.earth@email.com" method="POST" /> style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
 
     <input type="text" name="name" placeholder="Your Name" required 
 
@@ -502,13 +502,13 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
 
     <button type="submit" 
 
-      <style="padding: 12px 20px; background: #00ffcc; color: #000; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;">
+      style="padding: 12px 20px; background: #00ffcc; color: #000; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;">
 
       Send Message
 
     </button>
 
-  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST"> 
+  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST" class="space-y-4">
 
   <input type="hidden" name="_captcha" value="false">
 
@@ -518,6 +518,35 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
 
   </section>
 
+    <script>
+
+  let slideIndex = 0;
+
+  const slides = document.querySelectorAll('.slideshow img');
+
+
+
+  function showSlides() {
+
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    slides[slideIndex].classList.add('active');
+
+    slideIndex = (slideIndex + 1) % slides.length;
+
+  }
+
+
+
+  slides[0].classList.add('active'); // Show the first slide immediately
+
+  setInterval(showSlides, 5000); // Switch every 8 seconds
+
+</script>
+
+
+
+  </body>
     <script>
 
   let slideIndex = 0;
