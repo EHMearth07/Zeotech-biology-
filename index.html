@@ -1,375 +1,565 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Zeotech Institute of Virology and Biological Research</title>
+
   <style>
+
     body, html {
+
       margin: 0;
+
       padding: 0;
+
       font-family: 'Segoe UI', sans-serif;
+
       color: #fff;
+
       scroll-behavior: smooth;
+
     }
+
+
 
     /* Slideshow background */
+
     .slideshow {
+
       position: fixed;
+
       top: 0; left: 0;
+
       width: 100%;
+
       height: 100%;
+
       z-index: -1;
+
       overflow: hidden;
+
     }
+
+
 
     .slideshow img {
+
       width: 100%;
+
       height: 100vh;
+
       object-fit: cover;
+
       position: absolute;
+
       opacity: 0;
+
       transition: opacity 1s ease-in-out;
+
     }
+
+
 
     .slideshow img.active {
+
       opacity: 1;
+
     }
+
+
 
     /* Overlay for readability */
+
     .overlay {
+
       position: fixed;
+
       top: 0; left: 0;
+
       width: 100%;
+
       height: 100%;
+
       background: rgba(0,0,0,0.3);
+
       z-index: -1;
+
     }
+
+
 
     nav {
+
       background-color: rgba(0, 0, 0, 0.7);
+
       position: fixed;
+
       width: 100%;
+
       z-index: 10;
+
       top: 0;
+
       text-align: center;
+
       padding: 10px;
+
     }
+
+
 
     nav a {
+
       color: #fff;
+
       margin: 0 15px;
+
       text-decoration: none;
+
       font-weight: bold;
+
     }
+
+
 
     nav a:hover {
-      text-denav {
-      background-color: rgba(0, 0, 0, 0.7);
-      position: fixed;
-      width: 100%;
-      z-index: 10;
-      top: 0;
-      text-align: center;
-      padding: 10px;
+
+      text-decoration: underline;
+
     }
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
 
-    nav a:hover {
-      text-decoration: coration: underline;
-    }
 
     section {
+
       max-width: 900px;
+
       margin: 120px auto;
+
       padding: 30px;
+
       background: rgba(0,0,0,0.7);
+
       border-radius: 10px;
+
     }
+
+
 
     section h2 {
+
       color: #00ffcc;
+
       margin-top: 0;
+
     }
+
+
 
     section p {
+
       line-height: 1.6;
+
     }
+
+
 
     footer {
+
       text-align: center;
+
       padding: 40px;
+
       background: #111;
+
       color: #aaa;
+
     }
+
   </style>
+
 </head>
-  
+
 <body>
-  
+
+
+
   <!-- Background slideshow -->
+
   <div class="slideshow">
+
     <img src="https://images.unsplash.com/photo-1705256811175-b1e3398d50e4?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="active" />
+
     <img src="https://images.unsplash.com/photo-1707863080558-31e3e3e3ad86?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
     <img src="https://images.unsplash.com/photo-1643780668909-580822430155?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
     <img src="https://images.unsplash.com/photo-1579781403337-de692320718a?q=80&w=1043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
   </div>
+
   <div class="overlay"></div>
 
-  <!
+
+
+  <!-- Navbar -->
+
+  <nav>
+
+    <a href="#intro">Introduction</a>
+
+    <a href="#vision">Our Vision</a>
+
+    <a href="#technologies">Technologies</a>
+
+    <a href="#research">Research</a>
+
+    <a href="Blog.html">Blog</a>
+
+    <a href="#social">social</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+
+
   <!-- Sections -->
+
   <section id="intro">
+
     <h2>1. Introduction</h2>
+
     <p>Welcome to Zeotech: Innovating Biology for a Better Tomorrow
+
+
 
 At the intersection of curiosity and purpose, Zeotech Institute of Virology and Biological Research was born. Though we are a young initiative, we’re powered by an ambitious vision — to redefine how the world views biology, virology, and medical innovation. Zeotech is not just a name; it represents a movement — of young minds, aspiring scientists, and future doctors who believe in the untapped potential of biology to solve the world’s toughest challenges.
 
+
+
 In an age where chronic diseases are managed more than they are cured, we dream of doing things differently. What if we could use engineered viruses — not as threats, but as tools — to replace lifelong medications with long-lasting biological solutions? Imagine a future where instead of daily pills, patients receive a single, precisely targeted viral therapy that restores function, corrects metabolism, or even rewrites faulty genes. This is the kind of future Zeotech dares to imagine.
+
+
 
 But we're not there yet. We're just getting started — building a platform for scientific exploration, education, and community. As a 17-year-old student with a passion for microbiology and a vision for virology, our founder created Zeotech to document the journey from student to scientist, from dream to discovery.
 
+
+
 We aren’t claiming breakthroughs. Not yet. Instead, we’re building a community. Sharing knowledge. Starting conversations. On Instagram, through weekly blogs, and eventually through real research, we'll explore everything from fascinating microbiological facts to deep dives into the future of gene therapy and synthetic biology. Each post, each article, and each project is a step closer to our dream: an institute that not only imagines change but creates it.
+
+
 
 Join us in this journey. Whether you're a student, teacher, scientist, or just someone curious about how biology can change lives — Zeotech welcomes you.
 
+
+
 Let’s innovate biology, together.    
 
+
+
 .</p>
+
   </section>
 
+
+
   <section id="vision">
+
     <h2>2. Our Vision</h2>
+
     <p> Our Vision: Redesigning the Future Through Biology
+
+
 
 At Zeotech, our vision is rooted in the belief that biology isn’t just a subject—it’s a toolset for the future. We see a world where medicine isn't just reactive but proactive; where viruses, once feared, are reengineered to heal instead of harm; and where scientific curiosity meets real-world impact.
 
+
+
 Our ultimate goal is to pioneer a new kind of biology—one that's smarter, more sustainable, and deeply intertwined with human health and longevity. We believe that virology holds the key to the next medical revolution. Engineered viruses, gene editing, synthetic organisms—these aren't science fiction anymore. They're rapidly becoming the foundation of 21st-century medicine.
+
+
 
 Zeotech isn’t a lab yet—but it's the blueprint for one. It's a home for students, enthusiasts, and future researchers who believe that ideas can be incubated long before they’re tested in Petri dishes. We're laying the foundation not just for an organization, but for a movement: one that celebrates innovative biology, challenges traditional thinking, and embraces technology as a partner in discovery.
 
+
+
 We're driven by questions like:
+
+
 
 What if you could train a virus to fix insulin production in a diabetic patient?
 
+
+
 What if diseases could be cured at the genetic level before symptoms ever appear?
+
+
 
 What if biology could be personalized, not standardized?
 
 
+
+
+
 Our vision is long-term, but our steps are grounded in the present. Through storytelling, education, and outreach, Zeotech aims to spark curiosity today—to build scientists tomorrow.
+
+
 
 This journey isn't just about publishing papers or running experiments. It's about building a culture: one where science is accessible, exciting, and empowering. We believe biology should inspire—not intimidate.
 
+
+
 So we share our dreams early. We post them. We blog them. We design websites for them. Because every breakthrough begins as a bold idea—and this is ours.
 
+
+
 Zeotech envisions a world where biology is the bridge between imagination and reality.
+
 </p>
+
   </section>
 
+
+
   <section id="technologies">
+
     <h2>3. Technologies</h2>
+
   <p> Technologies: The Biological Tools of Tomorrow
+
+
 
 At Zeotech, we believe that biology is evolving faster than ever—and the tools we use must evolve with it. The future of medicine and microbiology lies not in a single breakthrough, but in the fusion of technologies that are redefining how we study, heal, and engineer life.
 
+
+
 Our approach is inspired by three central pillars:
+
+
 
 1. Synthetic Biology
 
+
+
 We’re fascinated by the potential of programming life. Synthetic biology allows scientists to design genetic circuits, create new organisms, and repurpose existing ones for human benefit. From reprogramming viruses to deliver gene therapies, to creating bacteria that detect toxins—this field is the epicenter of innovation. At Zeotech, we dream of bioengineered solutions to chronic illnesses, environmental threats, and more.
+
+
 
 2. Virology as a Therapeutic Platform
 
+
+
 Traditionally viewed as threats, viruses could become our most powerful allies. We envision a future where engineered viruses are used to replace malfunctioning genes, deliver targeted treatments, or even eliminate cancer cells. By studying viral behavior and hijacking their natural mechanisms, Zeotech is conceptually exploring how we could turn biology’s enemies into life-saving agents.
+
+
 
 3. AI-Driven Biology
 
+
+
 With the rise of AI, we’re now able to decode biology like never before. Machine learning models can predict protein folding, simulate drug interactions, and design genetic edits in silico. Zeotech sees AI not as a tool, but as a collaborator—accelerating research, minimizing trial-and-error, and unlocking patterns that human minds may miss.
+
+
 
 We’re also keen on fields like CRISPR, metabolic engineering, bioinformatics, and cellular diagnostics—where innovation meets precision. Although we’re not yet a formal lab, Zeotech’s core mission is to build familiarity and inspiration around these technologies—especially among young learners and curious minds.
 
+
+
 Whether it's through concept blogs, explainer videos, or community discussions, we want to bring cutting-edge science down to earth. No white coats or formal grants needed—just bold curiosity and the will to learn.
+
+
 
 In short, Zeotech stands at the crossroads of biology, technology, and imagination. We may not have all the resources yet, but we have the mindset—and that’s where every revolution begins.
 
+
+
  . </p>
+
   </section>
 
+
+
   <section id="research">
+
     <h2>4. Research</h2>
+
     <p> Research Focus: Building Tomorrow’s Biology Today
+
+
 
 At Zeotech, our research focus isn’t confined to microscopes and test tubes—it’s grounded in visionary thinking, conceptual exploration, and a commitment to solving real-world biological problems. While we’re still laying the groundwork for a future research organization, our current mission is to bridge the gap between emerging science and public understanding.
 
+
+
 Chronic Illness & Viral Therapeutics
+
+
 
 We are deeply interested in exploring how engineered viruses can revolutionize chronic disease treatment. Imagine a world where a modified virus replaces daily insulin injections for diabetics—or where a one-time gene delivery halts progressive disorders like Parkinson’s. Though still theoretical for us, this field holds transformative promise, and we aim to study its evolution, ethics, and technical breakthroughs closely.
 
+
+
 Microbial Engineering
+
+
 
 Microbes are nature’s most powerful chemists. At Zeotech, we want to shed light on how bacteria and fungi can be used to clean environments, detect toxins, produce biofuels, and generate new medicines. Our research blogs and visual explainers will cover how metabolic engineering and bioprocessing are shaping the next era of sustainable technology.
 
+
+
 Precision Biology & Genetic Design
+
+
 
 From CRISPR to base editing, the ability to precisely rewrite DNA is no longer science fiction. Our focus is to make these complex ideas accessible and inspiring to students, early researchers, and biology enthusiasts. We envision a future where Zeotech helps foster understanding of how these tools work, what they can achieve, and how they can be ethically applied.
 
+
+
 Virology Education & Awareness
+
+
 
 Viruses aren't just agents of disease—they’re incredible tools of evolution and vectors for innovation. Zeotech will serve as a hub for educational content that explores viruses not only as threats, but as opportunities for breakthrough science. We’ll highlight how virology intersects with immunology, gene therapy, and even climate resilience.
 
 
 
 
+
+
+
+
+
 In essence, our current research focus is not on performing experiments, but on building a curated, thoughtful, and youth-driven space for scientific curiosity. We want to normalize high-level bio discussions, simplify complex topics, and bring more young minds into the world of biotech and life sciences.
+
+
 
 We don’t have a lab—yet. But we have a mission: to explore, explain, and expand the boundaries of what biology can do.
 
+
+
 .</p>
+
     
+
   
+
   <section id="social" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white px-6 py-16">
+
   <div class="text-center space-y-6 animate-fade-in">
+
     <h2 class="text-4xl font-extrabold tracking-wide text-pink-500">Connect With Us</h2>
+
     <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+
       Join Zeotech's journey in innovating bioengineering and microbiological research. Stay tuned for daily insights, research updates, and behind-the-scenes!
+
     </p>
+
     <a href="https://www.instagram.com/zeotech_microbio?igsh=dnh5aWM2anl1bXhl"
+
        target="_blank"
+
        class="inline-flex items-center gap-3 bg-pink-600 hover:bg-pink-700 transition-all duration-300 ease-in-out px-8 py-4 text-lg font-semibold rounded-full shadow-lg text-white no-underline">
+
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+
         <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 3a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
+
       </svg>
+
       Follow us @zeotech_microbio
+
     </a>
+
   </div>
+
 </section>
 
+
+
   <section id="contact">
+
   <h2>5. Contact Us</h2>
+
   <p>Have a question or want to collaborate? Reach out to us below.</p>
+
   <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+
     <input type="text" name="name" placeholder="Your Name" required 
+
       style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"/>
+
+
 
     <input type="email" name="email" placeholder="Your Email" required 
+
       style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"/>
 
+
+
     <textarea name="message" rows="5" placeholder="Your Message" required 
+
       style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"></textarea>
 
+
+
     <input type="hidden" name="_next" value="thank-you.html">
+
     
+
     <button type="submit" 
+
       style="padding: 12px 20px; background: #00ffcc; color: #000; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;">
+
       Send Message
+
     </button>
+
   <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST" class="space-y-4">
+
   <input type="hidden" name="_captcha" value="false">
+
   <input type="hidden" name="_template" value="box">
+
   
+
   </section>
+
     <script>
+
   let slideIndex = 0;
+
   const slides = document.querySelectorAll('.slideshow img');
 
+
+
   function showSlides() {
+
     slides.forEach(slide => slide.classList.remove('active'));
+
     slides[slideIndex].classList.add('active');
+
     slideIndex = (slideIndex + 1) % slides.length;
+
   }
+
+
 
   slides[0].classList.add('active'); // Show the first slide immediately
+
   setInterval(showSlides, 5000); // Switch every 8 seconds
+
 </script>
-<script>
-  const sidebar = document.getElementById("sidebar");
-  const toggleButton = document.getElementById("toggleSidebar");
 
-  toggleButton.addEventListener("click", () => {
-    sidebar.classList.toggle("-translate-x-full");
-  });
-</script>
-    <script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('-translate-x-full');
-  }
-</script>
-    <!-- Hamburger Icon -->
-<div class="hamburger" onclick="toggleSidebar()">☰</div>
 
-<!-- Sidebar Navigation -->
-<div class="sidebar" id="sidebar">
-  <ul>
-    <li><a href="#intro">Introduction</a></li>
-    <li><a href="#vision">Vision</a></li>
-    <li><a href="#tech">Technology</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="blog.html">Blogs</a></li>
-    <li><a href="#social">Social</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</div>
 
-<style>
-  .hamburger {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 60px;
-    z-index: 1000;
-    box-shadow: 2px 0 12px rgba(0,0,0,0.4);
-  }
-
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0 20px;
-  }
-
-  .sidebar ul li {
-    margin: 25px 0;
-  }
-
-  .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.3s;
-  }
-
-  .sidebar ul li a:hover {
-    color: #00ffcc;
-  }
-</style>
-
-<script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
-  }
-</script>
-    
 </body>
-</body>
-</html>
+
+  </html>
