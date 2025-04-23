@@ -112,36 +112,7 @@
 </head>
   
 <body>
-  <!-- Sidebar -->
-<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-black text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-40 shadow-xl">
-  <div class="p-6 text-2xl font-bold border-b border-gray-700">
-    ZeoTech
-  </div>
-  <ul class="mt-6 space-y-6 px-6 text-lg">
-    <li><a href="#introduction" class="block hover:text-green-400 transition">Introduction</a></li>
-    <li><a href="#vision" class="block hover:text-green-400 transition">Vision</a></li>
-    <li><a href="#technologies" class="block hover:text-green-400 transition">Technology</a></li>
-    <li><a href="#research" class="block hover:text-green-400 transition">Research</a></li>
-    <li><a href="blog.html" class="block hover:text-green-400 transition">Blogs</a></li>
-    <li><a href="#social" class="block hover:text-green-400 transition">Social</a></li>
-    <li><a href="#contact" class="block hover:text-green-400 transition">Contact Us</a></li>
-  </ul>
-</div>
-  <!-- Toggle Button -->
-<button id="toggleSidebar" class="fixed top-4 left-4 z-50 bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full shadow-md focus:outline-none">
-  <!-- Hamburger icon -->
-  <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
-       viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 6h16M4 12h16M4 18h16"/>
-  </svg>
-</button>
-  <!-- Sidebar -->
-<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-black text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-40 shadow-xl">
-  <!-- rest of the sidebar code... -->
-</div>
   
-  
-
   <!-- Background slideshow -->
   <div class="slideshow">
     <img src="https://images.unsplash.com/photo-1705256811175-b1e3398d50e4?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="active" />
@@ -151,23 +122,7 @@
   </div>
   <div class="overlay"></div>
 
-  <!-- Navbar -->
-  <!-- Sidebar Navigation -->
-<div class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50" id="sidebar">
-  <div class="p-6 text-xl font-bold border-b border-gray-700">
-    ZeoTech
-  </div>
-  <ul class="mt-4 space-y-4 px-6 text-lg">
-    <li><a href="#introduction" class="block hover:text-pink-400 transition">Introduction</a></li>
-    <li><a href="#vision" class="block hover:text-pink-400 transition">Vision</a></li>
-    <li><a href="#technologies" class="block hover:text-pink-400 transition">Technology</a></li>
-    <li><a href="#research" class="block hover:text-pink-400 transition">Research</a></li>
-    <li><a href="blog.html" class="block hover:text-pink-400 transition">Blogs</a></li>
-    <li><a href="#social" class="block hover:text-pink-400 transition">Social</a></li>
-    <li><a href="#contact" class="block hover:text-pink-400 transition">Contact Us</a></li>
-  </ul>
-</div>
-
+  <!
   <!-- Sections -->
   <section id="intro">
     <h2>1. Introduction</h2>
@@ -346,6 +301,75 @@ We don’t have a lab—yet. But we have a mission: to explore, explain, and exp
     sidebar.classList.toggle('-translate-x-full');
   }
 </script>
+    <!-- Hamburger Icon -->
+<div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+<!-- Sidebar Navigation -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#tech">Technology</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="blog.html">Blogs</a></li>
+    <li><a href="#social">Social</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+
+<style>
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.4);
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0 20px;
+  }
+
+  .sidebar ul li {
+    margin: 25px 0;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+  .sidebar ul li a:hover {
+    color: #00ffcc;
+  }
+</style>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+  }
+</script>
+    
 </body>
 </body>
 </html>
