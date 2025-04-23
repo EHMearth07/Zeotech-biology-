@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zeotech Institute of Bioengineering</title>
+  <title>Zeotech Institute of Virology and Biological Research</title>
   <style>
     body, html {
       margin: 0;
@@ -46,7 +46,6 @@
       z-index: -1;
     }
 
-    /* Navigation Bar */
     nav {
       background-color: rgba(0, 0, 0, 0.7);
       position: fixed;
@@ -54,61 +53,35 @@
       z-index: 10;
       top: 0;
       text-align: center;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 10px;
     }
 
     nav a {
       color: #fff;
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      text-transform: uppercase;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* Main Sections */
     section {
-      max-width: 1100px;
+      max-width: 900px;
       margin: 120px auto;
-      padding: 40px;
+      padding: 30px;
       background: rgba(0,0,0,0.7);
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 
     section h2 {
       color: #00ffcc;
       margin-top: 0;
-      font-size: 2em;
     }
 
     section p {
-      line-height: 1.8;
-      font-size: 1.1em;
-      margin-bottom: 30px;
-    }
-
-    section ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    section ul li {
-      margin: 15px 0;
-      padding-left: 25px;
-      position: relative;
-    }
-
-    section ul li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #00ffcc;
-      font-size: 1.5em;
+      line-height: 1.6;
     }
 
     footer {
@@ -116,160 +89,53 @@
       padding: 40px;
       background: #111;
       color: #aaa;
-      font-size: 0.9em;
     }
-
-    footer a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Contact Form */
-    form label {
-      display: block;
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-
-    form button {
-      padding: 12px 25px;
-      background-color: #00ffcc;
-      border: none;
-      border-radius: 5px;
-      color: #111;
-      font-size: 1.1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #008c66;
-    }
-
-    /* Section for visual balance */
-    .content-section {
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .content-section div {
-      flex: 1 1 30%;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .content-section div h3 {
-      color: #00ffcc;
-      margin-bottom: 15px;
-    }
-
-    .content-section div p {
-      line-height: 1.6;
-      font-size: 1.1em;
-    }
-
-    /* Scroll to top button */
-    .scroll-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00ffcc;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 1.5em;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-      transition: background-color 0.3s ease;
-    }
-
-    .scroll-to-top:hover {
-      background-color: #008c66;
-    }
-
   </style>
 </head>
 <body>
 
   <!-- Background slideshow -->
   <div class="slideshow">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" class="active" />
-    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80" />
-    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=80" />
-    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1600&q=80" />
+    <img src="https://images.unsplash.com/photo-1591323645960-0ed6ff5f16de" class="active" />
+    <img src="https://images.unsplash.com/photo-1500530856420-b03654712da3" />
+    <img src="https://images.unsplash.com/photo-1604075732090-3f20f9e282fd" />
+    <img src="https://images.unsplash.com/photo-1561291733-b201552ce6b7" />
   </div>
   <div class="overlay"></div>
 
   <!-- Navbar -->
   <nav>
-    <a href="#overview">Overview</a>
+    <a href="#intro">Introduction</a>
+    <a href="#vision">Our Vision</a>
+    <a href="#technologies">Technologies</a>
     <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#collaborations">Collaborations</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Main Content -->
-  <section id="overview">
-    <h2>Overview of Zeotech Bioengineering</h2>
-    <p>Zeotech Institute of Bioengineering is at the forefront of groundbreaking research in bioengineering. We are dedicated to integrating biological principles with advanced technologies to address humanity’s most pressing health challenges. Our vision is to bridge the gap between biology and technology to create sustainable solutions for the future.</p>
+  <!-- Sections -->
+  <section id="intro">
+    <h2>1. Introduction</h2>
+    <p>Welcome to Zeotech Institute of Virology and Biological Research...</p>
+  </section>
+
+  <section id="vision">
+    <h2>2. Our Vision</h2>
+    <p>Our vision is to push the boundaries of bioengineering and revolutionize healthcare...</p>
+  </section>
+
+  <section id="technologies">
+    <h2>3. Technologies</h2>
+    <p>We are exploring cutting-edge technologies in the field of bioengineering, genetic manipulation, and more...</p>
   </section>
 
   <section id="research">
-    <h2>Research Focus</h2>
-    <div class="content-section">
-      <div>
-        <h3>Genetic Engineering</h3>
-        <p>We focus on the application of genetic modification to enhance human health, agriculture, and environmental sustainability.</p>
-      </div>
-      <div>
-        <h3>Bioinformatics</h3>
-        <p>Utilizing data analysis and algorithms to unlock the potential of bioengineering and create new opportunities for healthcare.</p>
-      </div>
-      <div>
-        <h3>Nanobiotechnology</h3>
-        <p>We explore the potential of nanotechnology for developing drug delivery systems and advanced medical treatments.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Ongoing Projects</h2>
-    <p>We are actively working on several interdisciplinary projects aimed at transforming the healthcare landscape. These projects include:</p>
-    <ul>
-      <li>Development of bioengineered tissues for organ regeneration.</li>
-      <li>Innovations in targeted gene therapy for chronic diseases.</li>
-      <li>Environmental restoration through biotechnology.</li>
-    </ul>
-  </section>
-
-  <section id="collaborations">
-    <h2>Strategic Collaborations</h2>
-    <p>Zeotech works closely with leading universities, research institutes, and industry leaders to push the boundaries of bioengineering. These collaborations help us translate research into real-world solutions.</p>
+    <h2>4. Research</h2>
+    <p>Our research aims to bridge the gap between biology and technology, creating sustainable solutions...</p>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formsubmit.co/zeotech@bioengineering.com" method="POST">
+    <h2>5. Contact Us</h2>
+    <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -279,17 +145,15 @@
       <label for="message">Your Message:</label>
       <textarea id="message" name="message" rows="4" required></textarea>
 
-      <input type="hidden" name="_next" value="thank-you.html">
+      <input type="hidden" name="_next" value="thank-you.html"> 
+
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Zeotech Institute of Bioengineering | <a href="mailto:zeotech@bioengineering.com">Contact Us</a>
+    &copy; 2025 Zeotech Institute | Email: info@zeotech.com
   </footer>
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
 
   <!-- Slideshow Script -->
   <script>
