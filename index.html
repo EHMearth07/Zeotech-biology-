@@ -894,6 +894,19 @@ And we’ll never stop until biology itself becomes the best doctor humanity has
   <input type="hidden" name="_template" value="box">
   
   </section>
+    <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slideshow img');
+
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[slideIndex].classList.add('active');
+    slideIndex = (slideIndex + 1) % slides.length;
+  }
+
+  slides[0].classList.add('active'); // Show the first slide immediately
+  setInterval(showSlides, 8000); // Switch every 8 seconds
+</script>
 
 </body>
 </html>
