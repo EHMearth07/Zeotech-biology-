@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeotech Institute of Virology and Biological Research</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Slideshow background */
+    .slideshow {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    /* Overlay for readability */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 120px auto;
+      padding: 30px;
+      background: rgba(0,0,0,0.7);
+      border-radius: 10px;
+    }
+
+    section h2 {
+      color: #00ffcc;
+      margin-top: 0;
+    }
+
+    section p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background slideshow -->
+  <div class="slideshow">
+    <img src="https://images.unsplash.com/photo-1705256811175-b1e3398d50e4?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="active" />
+    <img src="https://images.unsplash.com/photo-1707863080558-31e3e3e3ad86?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <img src="https://images.unsplash.com/photo-1643780668909-580822430155?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <img src="https://images.unsplash.com/photo-1579781403337-de692320718a?q=80&w=1043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#iblog">blog/a>
+    <a href="#education">Education</a>
+    <a href="#technologies">Technologies</a>
+    <a href="#research">Research</a>
+    <a href="#social">social</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="Blogs">
+    <h2>1. Introduction</h2>
+    <p>The Microscopic World That Could Save the World
+
+Published: April 28, 2025
+
+Hey there, science explorers!
+
+Welcome to the first ever Zeotech blog post — and no, we’re not starting with boring textbook content or intimidating research papers. We’re starting with something way cooler: why microbes are the real MVPs of life on Earth.
+
+We know, we know. Most people hear the word “virus” or “bacteria” and immediately think illness, disease, runaway soap commercials. But here's the twist: those tiny beings might just be the heroes of the future.
+
+Think about it…
+
+We’re using bacteria to clean up oil spills.
+Yep, certain microbes literally eat oil. Imagine the future of environmental clean-up being handled by nature’s own little janitors.
+
+We can program viruses to fight cancer.
+Sounds like sci-fi, but this is real-life synthetic biology. Viruses can be re-engineered to target and destroy cancer cells, leaving healthy ones untouched.
+
+Microbes might help us grow food on Mars.
+NASA and other space agencies are exploring microbial life to create ecosystems beyond Earth. Crazy, right?
+
+
+Here at Zeotech, we’re obsessed with these possibilities — not just because they’re cool (which they are), but because they show that biology isn’t just about memorizing pathways. It’s a tool, a language, and maybe even a solution to the biggest problems we face today.
+
+So whether you're a bio-nerd, a curious soul, or just scrolling through Instagram — stick with us. We’ll bring you stories, ideas, and maybe even some future tech that started with nothing but a microscope and a dream.
+
+Until next Sunday,
+Team Zeotech</p>
+  </section>
+
+  <section id="vision">
+    <h2>2. Collaborations</h2>
+    <p> COMING SOON</p>
+  </section>
+
+  <section id="technologies">
+    <h2>3. Technologies</h2>
+    <p> COMMING SOON </p>
+  </section>
+
+  <section id="research">
+    <h2>4. Ideas</h2>
+    <p>COMMING SON.</p>
+  
+  <section id="social" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white px-6 py-16">
+  <div class="text-center space-y-6 animate-fade-in">
+    <h2 class="text-4xl font-extrabold tracking-wide text-pink-500">Connect With Us</h2>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      Join Zeotech's journey in innovating bioengineering and microbiological research. Stay tuned for daily insights, research updates, and behind-the-scenes!
+    </p>
+    <a href="https://www.instagram.com/zeotech_microbio?igsh=dnh5aWM2anl1bXhl"
+       target="_blank"
+       class="inline-flex items-center gap-3 bg-pink-600 hover:bg-pink-700 transition-all duration-300 ease-in-out px-8 py-4 text-lg font-semibold rounded-full shadow-lg text-white no-underline">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 24 24">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 3a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
+      </svg>
+      Follow us @zeotech_microbio
+    </a>
+  </div>
+</section>
+
+  <section id="contact">
+  <h2>5. Contact Us</h2>
+  <p>Have a question or want to collaborate? Reach out to us below.</p>
+  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+    <input type="text" name="name" placeholder="Your Name" required 
+      style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"/>
+
+    <input type="email" name="email" placeholder="Your Email" required 
+      style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"/>
+
+    <textarea name="message" rows="5" placeholder="Your Message" required 
+      style="padding: 12px; background: rgba(255,255,255,0.1); border: 1px solid #00ffcc; border-radius: 8px; color: #fff;"></textarea>
+
+    <input type="hidden" name="_next" value="thank-you.html">
+    
+    <button type="submit" 
+      style="padding: 12px 20px; background: #00ffcc; color: #000; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;">
+      Send Message
+    </button>
+  <form action="https://formsubmit.co/ehm.earth@gmail.com" method="POST" class="space-y-4">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  
+  </section>
+    <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slideshow img');
+
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[slideIndex].classList.add('active');
+    slideIndex = (slideIndex + 1) % slides.length;
+  }
+
+  slides[0].classList.add('active'); // Show the first slide immediately
+  setInterval(showSlides, 5000); // Switch every 8 seconds
+</script>
+
+</body>
+</html>
