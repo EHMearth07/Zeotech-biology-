@@ -89,6 +89,42 @@
       padding: 40px;
       background: #111;
       color: #aaa;
+      /* Base styles for large screens */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navbar items */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+/* For small screens, make the items wrap into the next line */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack the links vertically */
+  }
+
+  .navbar li {
+    margin-right: 0; /* Remove horizontal spacing */
+    margin-bottom: 10px; /* Add vertical spacing between items */
+  }
+}
     }
   </style>
 </head>
