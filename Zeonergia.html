@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeonergia | ZeoTech</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style> /* Futuristic and classy theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* sleek dark gradient */
+  color: #f0f0f0;
+  line-height: 1.6;
+}
 
+h1, h2 {
+  color: #00ffe5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #00ffe5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ffffff;
+}
+
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+button {
+  background: #00ffe5;
+  border: none;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #ffffff;
+}
+
+/* Slide-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 1s ease-in-out;
+}
+    .menu-toggle {
+  font-size: 28px;
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #00ffcc;
+}
+
+#sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+#sideNav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#sideNav ul li {
+  margin: 25px 0;
+}
+
+#sideNav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #00ffcc;
+  transition: color 0.3s ease;
+}
+
+#sideNav ul li a:hover {
+  color: #ffffff;
+}
+    /* Slideshow styles */
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind the content */
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  animation: fadeInOut 15s infinite; /* Adjust timing for the transition */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+  
+</head>
+  
+<body>
+  <!-- Slideshow Container -->
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1742777614421-a4224d9335ea?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background Image 1" />
+  </div>
+  <div class="slide fade">
+    <img src=https://media.istockphoto.com/id/1131003688/photo/woman-researcher-performing-examination-of-bacterial-culture-plate.jpg?s=1024x1024&w=is&k=20&c=5nbAlclXxZ7NQ6vZfWd-Ld3A4D_1zd38NjqYHWDgAFs= alt="Background Image 2" />
+  </div>
+  <div class="slide fade">
+    <img https://images.unsplash.com/photo-1581399909989-621044fed328?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background Image 3" />
+  </div>
+</div>
+  <!-- Slide-out Navbar -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Slide-out Navbar -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+<nav id="sideNav">
+  <ul>
+    <li><a href="#about">About Zeonergia</a></li>
+    <li><a href="#science">The Science</a></li>
+    <li><a href="#vision">Vision & Goals</a></li>
+    <li><a href="#impact">Eco Impact</a></li>
+    <li><a href="#collab">Collaborate</a></li>
+    <li><a href="#social">Social</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="index.html">Back to Main Site</a></li>
+  </ul>
+</nav>
+  <!-- MAIN CONTENT SECTION -->
+<main class="content">
+
+  <section id="about" class="section">
+    <h1>About Zeonergia</h1>
+    <p>Zeonergia is a bold initiative under Zeotech that envisions a world powered by sustainable bioenergy derived from microbial innovations. We believe that by tapping into the vast potential of engineered microorganisms, we can reduce dependency on fossil fuels and usher in a cleaner, greener energy age.</p>
+  </section>
+
+  <section id="science" class="section">
+    <h1>The Science</h1>
+    <p>At the heart of Zeonergia lies synthetic biology, microbiology, and ecological biochemistry. Our goal is to design bacteria, algae, and yeast strains that can convert biomass, waste, or atmospheric CO₂ into usable biofuels such as ethanol, butanol, hydrogen, or even advanced hydrocarbons, mimicking fossil fuels.</p>
+  </section>
+
+  <section id="vision" class="section">
+    <h1>Vision & Goals</h1>
+    <ul>
+      <li>Create modular biofuel generation systems deployable in rural areas</li>
+      <li>Integrate biofuel tech into smart cities and future transport systems</li>
+      <li>Collaborate with Indian agri and waste management sectors</li>
+      <li>Build a student-researcher driven ecosystem for open innovation</li>
+    </ul>
+  </section>
+
+  <section id="impact" class="section">
+    <h1>Ecological Impact</h1>
+    <p>Zeonergia aims to drastically lower the carbon footprint by converting biological waste into energy, minimizing landfill load, and reducing fossil fuel usage. The by-products of many microbial biofuel processes are non-toxic and can serve as fertilizers or soil conditioners.</p>
+  </section>
+
+  <section id="collab" class="section">
+    <h1>Collaborate With Us</h1>
+    <p>Are you a student, researcher, lab, or institution interested in sustainable energy or microbial research? Join the Zeonergia research initiative! We welcome partnerships for prototype development, academic research, and field testing.</p>
+  </section>
+
+  <section id="social" class="section">
+    <h1>Follow Zeonergia</h1>
+    <p>Stay updated with our latest ideas, breakthroughs, and open calls for contributors. We’re active on Instagram, LinkedIn, and Twitter. A dedicated blog and video podcast series is coming soon!</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>Contact ZeoTech</h1>
+    <p>For questions, project collaborations, or to join our mission, reach out to us at: <strong>zeotech.virology@gmail.com</strong></p>
+  </section>
+
+</main>
+  
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("sideNav");
+    if (nav.style.width === "250px") {
+      nav.style.width = "0";
+    } else {
+      nav.style.width = "250px";
+    }
+  }
+  <script>
+  // JavaScript for slideshow functionality
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; // Hide all slides
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1; // Reset to the first slide
+    }
+    slides[slideIndex - 1].style.display = "block"; // Show the current slide
+    setTimeout(showSlides, 3000); // Change image every 5 seconds
+  }
+
+  showSlides(); // Initial call to start the slideshow
+
+</script>
+</body>
+</html>
